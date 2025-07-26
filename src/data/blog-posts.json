@@ -1,0 +1,57 @@
+[
+  {
+    "id": "dark-forest-theory-analysis",
+    "title": "The Dark Forest Theory: A Cosmic Horror Analysis",
+    "author": "Dr. Elena Vasquez",
+    "date": "2024-01-15",
+    "excerpt": "Exploring the terrifying implications of Liu Cixin's Dark Forest theory and its parallels to real cosmic silence.",
+    "content": "The Dark Forest theory presents one of the most chilling explanations for the Fermi Paradox. In Liu Cixin's universe, every civilization is a hunter in a dark forest, moving quietly through the trees while listening for others...",
+    "tags": ["dark-forest", "theory", "analysis"],
+    "comments": 23,
+    "likes": 156
+  },
+  {
+    "id": "singer-civilization-mystery",
+    "title": "The Singer: Deconstructing the Ultimate Dark Forest Enforcer",
+    "author": "Marcus Chen",
+    "date": "2024-01-12",
+    "excerpt": "A deep dive into the most terrifying civilization in Death's End - the Singer and their dimensional weapons.",
+    "content": "The Singer represents the pinnacle of Dark Forest logic made manifest. Operating from 116 million light-years away, this entity embodies the cold mathematics of cosmic survival...",
+    "tags": ["singer", "deaths-end", "dimensional-weapons"],
+    "comments": 41,
+    "likes": 289
+  },
+  {
+    "id": "redemption-time-civilizations",
+    "title": "Beyond the Trilogy: New Threats in Redemption of Time",
+    "author": "Sarah Kim",
+    "date": "2024-01-10",
+    "excerpt": "Analyzing the Descendants, Ghosts, and other multiversal entities introduced in Baoshu's sequel.",
+    "content": "Redemption of Time expands the Three-Body universe beyond dimensional manipulation into true multiversal horror. The Descendants represent a threat that makes even the Singer seem limited...",
+    "tags": ["redemption-of-time", "descendants", "multiverse"],
+    "comments": 67,
+    "likes": 234
+  },
+  {
+    "id": "threat-classification-system",
+    "title": "Developing a Universal Threat Classification System",
+    "author": "Prof. James Wright",
+    "date": "2024-01-08",
+    "excerpt": "Proposing a standardized method for classifying cosmic civilizations based on their destructive capabilities.",
+    "content": "Building on the threat levels implied in the Three-Body series, I propose a formal classification system that could theoretically apply to real cosmic civilizations...",
+    "tags": ["classification", "theory", "methodology"],
+    "comments": 19,
+    "likes": 142
+  },
+  {
+    "id": "returners-philosophical-analysis",
+    "title": "The Returners: When Survival Becomes Meaningless",
+    "author": "Dr. Yuki Tanaka",
+    "date": "2024-01-05",
+    "excerpt": "Exploring the existential horror of civilizations that have survived too long in the dark forest.",
+    "content": "The Returners represent perhaps the most psychologically disturbing concept in the Three-Body universe. They are survivors who have discovered that survival itself may be worse than extinction...",
+    "tags": ["returners", "philosophy", "existential-horror"],
+    "comments": 35,
+    "likes": 198
+  }
+]

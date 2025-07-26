@@ -1,0 +1,132 @@
+[
+  {
+    "id": "descendants",
+    "name": "The Descendants",
+    "class": 5,
+    "description": "Ancient multiversal entities that once warred against the Spirit. They exist outside traditional time and space, manipulating lower-dimensional civilizations as pawns. The true antagonists of Redemption of Time, seeking to spread corruption across universes through Conceptual Seeds.",
+    "first_appearance": "Redemption of Time",
+    "details": {
+      "form": "Shapeshifters and conceptual beings, often appearing as idealized forms",
+      "origin": "Multiversal, existing before traditional spacetime",
+      "weaponry": "Conceptual Seeds, consciousness manipulation, multiversal corruption",
+      "quotes": [
+        "We are older than time itself.",
+        "Every universe will know our touch."
+      ]
+    }
+  },
+  {
+    "id": "zero-homers",
+    "name": "Zero-Homers",
+    "class": 5,
+    "description": "Cryptic entities mentioned in Death's End who attempted to end the universe by rewriting fundamental physics. They launched attacks on the basic constants of the universe to make it uninhabitable for life - a form of cosmic-scale annihilation beyond mere destruction.",
+    "first_appearance": "Death's End",
+    "details": {
+      "form": "Unknown - possibly post-biological entities",
+      "origin": "Unknown cosmic region",
+      "weaponry": "Universal constant manipulation, physics law alteration",
+      "quotes": [
+        "Return everything to zero.",
+        "No home shall remain."
+      ]
+    }
+  },
+  {
+    "id": "trisolaran",
+    "name": "Trisolaran Civilization",
+    "class": 2,
+    "description": "A technologically advanced alien civilization from the Alpha Centauri system. Known for their chaotic three-sun environment and dehydration survival abilities.",
+    "first_appearance": "The Three-Body Problem",
+    "details": {
+      "form": "Humanoid with dehydration capabilities",
+      "origin": "Alpha Centauri system",
+      "weaponry": "Sophons, invasion fleet, advanced physics manipulation",
+      "quotes": [
+        "The universe is not a fairy tale.",
+        "Civilization is a thin veneer over chaos."
+      ]
+    }
+  },
+  {
+    "id": "singer-civilization",
+    "name": "Singer Civilization",
+    "class": 4,
+    "description": "A post-singularity alien civilization operating ~116 million light-years away. They enforce Dark Forest law with mathematical coldness, using dimensional weapons to annihilate detected civilizations. Before each strike, the Singer composes a final song - a haunting ritual of contemplation before cosmic genocide.",
+    "first_appearance": "Death's End",
+    "details": {
+      "form": "Likely post-biological or quantum-networked consciousness",
+      "origin": "Deep galaxy, approximately 116 million light-years from Earth",
+      "weaponry": "Spacetime foils (dimensional collapse weapons), stellar-scale observation arrays",
+      "quotes": [
+        "The Singer finished the song. Then activated the weapon.",
+        "Cleansing in progress.",
+        "I'm going to give you a piece of two-dimensional space."
+      ]
+    }
+  },
+  {
+    "id": "earth-humanity",
+    "name": "Earth Humanity",
+    "class": 1,
+    "description": "The human civilization of Earth, struggling to survive in a hostile universe. Despite their technological limitations, they show remarkable adaptability and ingenuity.",
+    "first_appearance": "The Three-Body Problem",
+    "details": {
+      "form": "Biological humans",
+      "origin": "Earth, Sol system",
+      "weaponry": "Nuclear weapons, space elevators, stellar-class warships",
+      "quotes": [
+        "Give civilization to time, and time to civilization.",
+        "The universe is a dark forest."
+      ]
+    }
+  },
+  {
+    "id": "returners",
+    "name": "The Returners",
+    "class": 3,
+    "description": "Ancient, decayed civilization existing within lightless stellar husks. They have 'returned from the dead' - survivors who fled so deeply into hiding that their biology and purpose have eroded into nihilistic despair. They believe in the futility of survival and spread philosophical poison to other civilizations.",
+    "first_appearance": "Death's End",
+    "details": {
+      "form": "Post-biological or heavily degraded entities",
+      "origin": "Derelict vessels orbiting dead stars",
+      "weaponry": "Memetic despair, communication sabotage, philosophical corruption",
+      "quotes": [
+        "We have returned from the dead.",
+        "The universe is a grave, and every star is a tombstone.",
+        "We are dust that once thought."
+      ]
+    }
+  },
+  {
+    "id": "return-movement",
+    "name": "Return Movement",
+    "class": 3,
+    "description": "A human faction dedicated to returning the universe to its original state. They possess advanced technology obtained through contact with higher-dimensional beings.",
+    "first_appearance": "Redemption of Time",
+    "details": {
+      "form": "Enhanced humans with dimensional technology",
+      "origin": "Earth-based movement",
+      "weaponry": "Dimensional manipulation, time travel technology",
+      "quotes": [
+        "We must return the universe to its pristine state.",
+        "The damage can be undone."
+      ]
+    }
+  },
+  {
+    "id": "edge-world",
+    "name": "Edge World Civilization",
+    "class": 2,
+    "description": "A civilization existing at the edge of known space, adapted to the harsh conditions of the cosmic boundary. They serve as guardians of dimensional barriers.",
+    "first_appearance": "Redemption of Time",
+    "details": {
+      "form": "Crystalline beings adapted to extreme conditions",
+      "origin": "Edge of the observable universe",
+      "weaponry": "Dimensional shields, quantum barriers",
+      "quotes": [
+        "We are the watchers at the edge of existence.",
+        "Some boundaries must never be crossed."
+      ]
+    }
+  }
+]
