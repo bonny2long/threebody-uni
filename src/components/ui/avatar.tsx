@@ -4,9 +4,7 @@ import * as React from "react"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
 
-interface AvatarProps extends React.HTMLAttributes<HTMLDivElement> {
-  // Inherits all HTMLDivElement attributes
-}
+type AvatarProps = React.HTMLAttributes<HTMLDivElement>
 
 const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(
   ({ className, ...props }, ref) => (
@@ -22,27 +20,30 @@ const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(
 )
 Avatar.displayName = "Avatar"
 
-interface AvatarImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
-  // Inherits all HTMLImageElement attributes
+type AvatarImageProps = React.ImgHTMLAttributes<HTMLImageElement> & {
+  src?: string;
 }
 
 const AvatarImage = React.forwardRef<HTMLImageElement, AvatarImageProps>(
-  ({ className, alt = "Avatar", ...props }, ref) => (
-    <Image
-      ref={ref}
-      className={cn("aspect-square h-full w-full", className)}
-      alt={alt}
-      width={40}
-      height={40}
-      {...props}
-    />
-  )
+  ({ className, alt = "Avatar", width = 40, height = 40, src, ...props }, ref) => {
+    if (!src) return null;
+    
+    return (
+      <Image
+        ref={ref}
+        className={cn("aspect-square h-full w-full", className)}
+        alt={alt}
+        width={Number(width)}
+        height={Number(height)}
+        src={src}
+        {...props}
+      />
+    );
+  }
 )
 AvatarImage.displayName = "AvatarImage"
 
-interface AvatarFallbackProps extends React.HTMLAttributes<HTMLDivElement> {
-  // Inherits all HTMLDivElement attributes
-}
+type AvatarFallbackProps = React.HTMLAttributes<HTMLDivElement>
 
 const AvatarFallback = React.forwardRef<HTMLDivElement, AvatarFallbackProps>(
   ({ className, ...props }, ref) => (
