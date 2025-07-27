@@ -85,7 +85,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
           setPost(null);
         }
       } catch (error) {
-        console.error("Error fetching post:", error.message);
+        console.error("Error fetching post:", error instanceof Error ? error.message : String(error));
         if (isMounted) setIsOffline(true);
       } finally {
         if (isMounted) setLoading(false);
