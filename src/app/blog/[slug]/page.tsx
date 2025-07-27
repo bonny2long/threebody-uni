@@ -162,6 +162,10 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
     return <div className="container mx-auto max-w-4xl px-4 py-8">Offline. Please check your internet connection and try again.</div>;
   }
 
+  if (!post) {
+    return notFound();
+  }
+
   return (
     <div className="container mx-auto max-w-4xl px-4 py-8">
       <Link href="/blog" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8">

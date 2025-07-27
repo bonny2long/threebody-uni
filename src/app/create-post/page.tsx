@@ -29,7 +29,7 @@ export default function CreatePostPage() {
           setUser(currentUser);
         }
       } catch (error) {
-        console.error("Auth initialization error:", error.message);
+        console.error("Auth initialization error:", error instanceof Error ? error.message : String(error));
       }
     };
     initializeAuth();
@@ -59,7 +59,7 @@ export default function CreatePostPage() {
       setTopics('');
       // Optionally redirect to the new post page: window.location.href = `/blog/${docRef.id}`;
     } catch (err) {
-      console.error("Error creating post:", err.message || err);
+      console.error("Error creating post:", err instanceof Error ? err.message : String(err));
       setError('Failed to create post. Please try again.');
     } finally {
       setLoading(false);

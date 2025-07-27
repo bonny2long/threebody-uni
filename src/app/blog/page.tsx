@@ -29,11 +29,19 @@ export default function BlogPage() {
   useEffect(() => {
     const q = query(collection(db, 'posts'), orderBy('date', 'desc'));
     const unsubscribe = onSnapshot(q, (snapshot) => {
-      const postsData = snapshot.docs.map(doc => ({
-        id: doc.id,
-        ...doc.data(),
-        date: doc.data().date?.toDate().toISOString().split('T')[0] || new Date().toISOString().split('T')[0]
-      }));
+      const postsData = snapshot.docs.map(doc => {
+        const data = doc.data();
+        return {
+          id: doc.id,
+          title: data.title || '',
+          excerpt: data.excerpt || '',
+          author: data.author || 'Anonymous',
+          tags: data.tags || [],
+          date: data.date?.toDate().toISOString().split('T')[0] || new Date().toISOString().split('T')[0],
+          likes: data.likes || 0,
+          content: data.content || ''
+        };
+      });
       setPosts(postsData);
     }, (error) => {
       console.error("Error fetching posts:", error.message || error);
