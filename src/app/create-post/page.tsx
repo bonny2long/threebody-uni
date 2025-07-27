@@ -7,6 +7,7 @@ import { ArrowLeft } from 'lucide-react';
 import { db } from '@/lib/firebase';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import { auth, signInAnonymouslyUser } from '@/lib/firebase';
+import { User } from 'firebase/auth';
 
 export default function CreatePostPage() {
   const [title, setTitle] = useState('');
@@ -15,7 +16,7 @@ export default function CreatePostPage() {
   const [topics, setTopics] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
-  const [user, setUser] = useState<any>(null);
+  const [user, setUser] = useState<User | null>(null);
 
   useEffect(() => {
     const initializeAuth = async () => {

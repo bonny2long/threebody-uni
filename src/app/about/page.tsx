@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
-import { BookOpen, Users, Shield, ExternalLink } from 'lucide-react';
+import { BookOpen, Users, Shield } from 'lucide-react';
 
 export default function AboutPage() {
   return (
@@ -25,8 +25,8 @@ export default function AboutPage() {
               <h3 className="font-semibold mb-2">The Three-Body Trilogy</h3>
               <p className="text-muted-foreground text-sm">
                 Original series by Liu Cixin, featuring <em>The Three-Body Problem</em>, 
-                <em>The Dark Forest</em>, and <em>Death's End</em>. This groundbreaking 
-                science fiction series explores first contact, cosmic sociology, and humanity's 
+                <em>The Dark Forest</em>, and <em>Death&apos;s End</em>. This groundbreaking 
+                science fiction series explores first contact, cosmic sociology, and humanity&apos;s 
                 place in a hostile universe.
               </p>
             </div>
@@ -62,7 +62,7 @@ export default function AboutPage() {
                 <li>• Dark/light theme support</li>
                 <li>• Responsive design for all devices</li>
                 <li>• Expandable lore sections</li>
-                <li>• Immersive "Dark Forest Protocol" theming</li>
+                <li>• Immersive &quot;Dark Forest Protocol&quot; theming</li>
               </ul>
             </div>
           </CardContent>
@@ -215,7 +215,7 @@ export default function AboutPage() {
               <div className="flex flex-wrap gap-2">
                 <span className="text-xs px-2 py-1 bg-muted rounded">The Three-Body Problem</span>
                 <span className="text-xs px-2 py-1 bg-muted rounded">The Dark Forest</span>
-                <span className="text-xs px-2 py-1 bg-muted rounded">Death's End</span>
+                <span className="text-xs px-2 py-1 bg-muted rounded">Death&apos;s End</span>
                 <span className="text-xs px-2 py-1 bg-muted rounded">Redemption of Time</span>
               </div>
             </CardContent>
@@ -224,7 +224,7 @@ export default function AboutPage() {
 
         <div className="text-center py-8 border-t">
           <p className="text-sm text-muted-foreground">
-            "Give civilization to time, and time to civilization."
+            &quot;Give civilization to time, and time to civilization.&quot;
           </p>
           <p className="text-xs text-muted-foreground mt-2">
             — Three-Body Universe Database • 2024

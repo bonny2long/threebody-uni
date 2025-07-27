@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { ThreatLevelBadge } from '@/components/ThreatLevelBadge';
-import { Shield, Database, Clock, BookOpen, Search, Filter, Zap } from 'lucide-react';
+import { Shield, Database, Clock, BookOpen, Search, Zap } from 'lucide-react';
 import { SearchModal } from '@/components/SearchModal';
 import civilizationsData from '@/data/civilizations.json';
 
@@ -187,7 +187,7 @@ export default function Home() {
           </CardHeader>
           <CardContent className="text-center">
             <p className="text-red-800 dark:text-red-200 mb-6">
-              "The universe is a dark forest. Every civilization is an armed hunter stalking through the trees..."
+              &quot;The universe is a dark forest. Every civilization is an armed hunter stalking through the trees...&quot;
             </p>
             <p className="text-sm text-red-600 dark:text-red-400">
               Exercise extreme caution when accessing threat data. Information contained within 

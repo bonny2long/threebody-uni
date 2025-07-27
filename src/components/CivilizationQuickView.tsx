@@ -146,7 +146,7 @@ export function CivilizationQuickView({ isOpen, onClose, civilization }: Civiliz
               <CardContent className="pt-0 space-y-2">
                 {civilization.details.quotes.map((quote, index) => (
                   <blockquote key={index} className="border-l-2 border-primary pl-4 italic text-sm">
-                    "{quote}"
+                    &quot;{quote}&quot;
                   </blockquote>
                 ))}
               </CardContent>

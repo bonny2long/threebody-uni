@@ -10,8 +10,19 @@ import { Heart, MessageCircle, Calendar, User, PenTool, Filter, Search } from 'l
 import { db } from '@/lib/firebase';
 import { collection, query, onSnapshot, orderBy } from 'firebase/firestore';
 
+interface Post {
+  id: string;
+  title: string;
+  excerpt: string;
+  author: string;
+  date: string;
+  likes?: number;
+  comments?: number;
+  tags: string[];
+}
+
 export default function BlogPage() {
-  const [posts, setPosts] = useState<any[]>([]);
+  const [posts, setPosts] = useState<Post[]>([]);
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -263,7 +274,7 @@ export default function BlogPage() {
             • Use spoiler warnings for major plot revelations
           </p>
           <p className="text-sm">
-            • Remember: "The universe is a dark forest" - approach with caution and wisdom
+            • Remember: &quot;The universe is a dark forest&quot; - approach with caution and wisdom
           </p>
         </CardContent>
       </Card>

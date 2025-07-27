@@ -13,6 +13,7 @@ import { Heart, MessageCircle, Calendar, ArrowLeft, Reply } from 'lucide-react';
 import { db } from '@/lib/firebase';
 import { collection, query, onSnapshot, addDoc, orderBy, doc, getDoc, serverTimestamp } from 'firebase/firestore';
 import { auth, signInAnonymouslyUser } from '@/lib/firebase';
+import { User } from 'firebase/auth';
 
 interface Comment {
   id: string;
@@ -40,7 +41,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
   const [newComment, setNewComment] = useState('');
   const [liked, setLiked] = useState(false);
   const [post, setPost] = useState<Post | null>(null);
-  const [user, setUser] = useState<any>(null);
+  const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
   const [isOffline, setIsOffline] = useState(false);
 
@@ -57,7 +58,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
           if (isMounted) setUser(currentUser);
         }
       } catch (error) {
-        console.error("Auth initialization error:", error.message);
+        console.error("Auth initialization error:", error instanceof Error ? error.message : String(error));
         if (isMounted) setIsOffline(true);
       }
     };
@@ -185,7 +186,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
           <div className="space-y-4 text-base leading-relaxed">
             <p>{post.content}</p>
             <p>In the vast cosmic arena described by Liu Cixin, every civilization faces the same fundamental dilemma: reveal yourself and risk annihilation, or remain hidden and survive in isolation. The Dark Forest theory suggests that the universe is filled with civilizations, but they all remain silent out of fear.</p>
-            <p>What makes the Singer civilization so terrifying is not just their technological superiority, but their complete detachment from moral considerations. They operate like a cosmic immune system, automatically responding to any detected "infection" of intelligent life.</p>
+            <p>What makes the Singer civilization so terrifying is not just their technological superiority, but their complete detachment from moral considerations. They operate like a cosmic immune system, automatically responding to any detected &quot;infection&quot; of intelligent life.</p>
             <p>The psychological implications are staggering. Imagine being part of a civilization that has survived by becoming hunters, knowing that your very existence depends on the systematic elimination of others who might threaten you. The hunters in this dark forest may suffer from an existential horror that their prey never experiences.</p>
           </div>
         </div>

@@ -253,13 +253,13 @@ export function SearchModal({ isOpen, onClose, initialQuery = '' }: SearchModalP
                 <Search className="h-12 w-12 mx-auto mb-4 opacity-50" />
                 <p className="text-lg font-medium mb-2">No Results Found</p>
                 <p className="text-sm">
-                  No civilizations match "{query}" with current filters
+                  No civilizations match &quot;{query}&quot; with current filters
                 </p>
               </div>
             ) : (
               <>
                 <div className="text-sm text-muted-foreground mb-4">
-                  Found {filteredResults.length} result{filteredResults.length !== 1 ? 's' : ''} for "{query}"
+                  Found {filteredResults.length} result{filteredResults.length !== 1 ? 's' : ''} for &quot;{query}&quot;
                 </div>
                 {filteredResults.map((result, index) => (
                   <Card key={`${result.id}-${index}`} className="hover:shadow-md transition-shadow">
@@ -296,7 +296,7 @@ export function SearchModal({ isOpen, onClose, initialQuery = '' }: SearchModalP
                         )}
                         {result.matchType === 'quote' && (
                           <blockquote className="border-l-2 border-primary pl-3 italic text-sm">
-                            "{highlightMatch(result.matchText, query)}"
+                            &quot;{highlightMatch(result.matchText, query)}&quot;
                           </blockquote>
                         )}
                         {result.matchType === 'capability' && (
