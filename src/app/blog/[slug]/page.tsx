@@ -101,7 +101,14 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
       const commentsData = snapshot.docs.map(doc => {
         const data = doc.data();
         const date = data.date ? (data.date.toDate ? data.date.toDate().toISOString().split('T')[0] : new Date().toISOString().split('T')[0]) : new Date().toISOString().split('T')[0];
-        return { id: doc.id, ...data, date, replies: [] } as Comment;
+        return {
+          id: doc.id,
+          author: data.author || 'Anonymous',
+          content: data.content || '',
+          likes: data.likes || 0,
+          date,
+          replies: []
+        } as Comment;
       });
       if (isMounted) setComments(commentsData);
     }, (error) => {
@@ -142,7 +149,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
       console.log("Comment added with ID:", docRef.id);
       setNewComment('');
     } catch (error) {
-      console.error("Error adding comment:", error.message);
+      console.error("Error adding comment:", error instanceof Error ? error.message : String(error));
       setIsOffline(true);
     }
   };
